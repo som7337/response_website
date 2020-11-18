@@ -393,17 +393,19 @@ section .row .column .inner img{
 }
 
 #footer{
-  background: #000000; /*black = #000 = #000000*/
-  color: #fff;
+  background: #000000; /*black = #000 = #000000 */
+  color: #ffffff; /*white = #fff = #ffffff*/
   font-size: 14px;
 }
 
 #footer .footer_top{
-  background: #111;
-  padding: 60px 0 30px; /*paddig: 60 0 30 0*/
+  background: #111111;
+  padding: 60px 0 30px;
+  /*padding-top: 60px; padding-left: 0; padding-right: 0; padding-bottom: 30px;*/
 }
 
-#footer .footer_top .container{
+#footer .container{
+  /*footer_top의 .container와 #footer 의 자식요소 .container의 공통스타일 적용*/
   margin: 0 auto;
   width: 1140px;
 }
@@ -429,7 +431,7 @@ section .row .column .inner img{
 #footer .container .row .column.footer_logo h3{
   font-size: 34px;
   margin: 0 0 20px 0;
-  padding: 2px 0 2px 10px; /*border-left가 10px 띄워져생성됨*/
+  padding: 2px 0 2px 10px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 3px;
@@ -453,7 +455,7 @@ section .row .column .inner img{
   bottom: 0;
   height: 2px;
 }
-``
+
 #footer .container .row .column h4:before{
   right: 0;
   background: #555555;
@@ -465,12 +467,12 @@ section .row .column .inner img{
 }
 
 #footer .container .row .column ul li{
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333333;
   padding: 10px 0;
 }
 
-#footer .container .row .column ul li:nth-of-type(1){
-  padding-top:0;
+#footer .container .row .column ul li:nth-child(1){
+  padding-top: 0;
 }
 
 #footer .container .row .column p{
@@ -488,8 +490,8 @@ section .row .column .inner img{
   border: 0;
   width: 35%;
   padding: 6px 0;
-  color: #fff;
   text-align: center;
+  color: #ffffff;
   cursor: pointer;
 }
 
